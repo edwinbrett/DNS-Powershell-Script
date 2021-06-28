@@ -1,10 +1,10 @@
 ﻿<#
-This scipt's purpose is to change DNS servers for Celerant devices, it validates the current set DNS, sets the specified DNS, and then verifies it after by checking what the DNS servers are set to, and check against the loopbacked domain on their network.
+This scipt's purpose is to change DNS servers for devices, it validates the current set DNS, sets the specified DNS, and then verifies it after by checking what the DNS servers are set to, and check against the loopbacked domain on their network.
 
 Made by Edwin Brett, Please email ebrett@staff.atlantic.net if any issues.
 #>
 
-Write-Host "  Celerant DNS Change
+Write-Host "  DNS Change
 =======================" -ForegroundColor Yellow
 
 # Show DNS servers before update
@@ -32,10 +32,10 @@ Get-NetIPConfiguration -InterfaceAlias Ethernet
 ""
 
 #Verification of DNS change
-Write-Host "Splashtop.com should resolve to 127.0.0.1
-Celerant.com should resolve to 35.231.63.135" -ForegroundColor Yellow
+Write-Host "Bing.com should resolve to 127.0.0.1
+Edwinbrett.com should resolve to xxx.xxx.xxx..xxx" -ForegroundColor Yellow
 Resolve-DnsName -Name www.bing.com
 ""
-Resolve-DnsName -Name www.celerant.com
+Resolve-DnsName -Name www.edwinbrett.com
 
 Pause
