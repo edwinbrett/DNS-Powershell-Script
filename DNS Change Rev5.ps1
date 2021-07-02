@@ -39,3 +39,4 @@ Resolve-DnsName -Name www.bing.com
 Resolve-DnsName -Name www.edwinbrett.com
 
 Pause
+#testing something
