@@ -37,5 +37,5 @@ Edwinbrett.com should resolve to xxx.xxx.xxx..xxx" -ForegroundColor Yellow
 Resolve-DnsName -Name www.bing.com
 ""
 Resolve-DnsName -Name www.edwinbrett.com
-
+""
 Pause
