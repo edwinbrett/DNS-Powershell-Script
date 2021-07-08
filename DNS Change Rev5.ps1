@@ -1,7 +1,7 @@
 ﻿<#
 This scipt's purpose is to change DNS servers for devices, it validates the current set DNS, sets the specified DNS, and then verifies it after by checking what the DNS servers are set to, and check against the loopbacked domain on their network.
 
-Made by Edwin Brett, Please email ebrett@staff.atlantic.net if any issues.
+Made by Edwin Brett, Please reach out via https://Edwinbrett.com if you have any issues.
 #>
 
 Write-Host "  DNS Change
